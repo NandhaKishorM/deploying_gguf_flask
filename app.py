@@ -27,13 +27,17 @@ def model_output(message, max_tokens):
 def user():
     if request.method == 'GET':
         message = request.args.get('message')
-        response = model_output(message, 512)
+        context_length = request.args.get('context_length')
+        context_length = int(context_length)
+        response = model_output(message, context_length)
         return jsonify({'response': response}), 200
 
     elif request.method == 'POST':
         data = request.get_json()
         message = data.get('message')
-        response = model_output(message, 512)
+        context_length  = data.get('context_length')
+        context_length  = int(context_length)
+        response = model_output(message, context_length)
         return jsonify({'response': response}), 200
 
 if __name__ == '__main__':

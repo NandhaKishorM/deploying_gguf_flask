@@ -3,7 +3,8 @@ import json
 
 url = "http://localhost:5000//api/deployment"
 data = {
-    "message": "what are the best pesticides for crops in Kerala?"
+    "message": "what are the best pesticides for crops in Kerala?",
+    "context_length":2048
 }
 
 headers = {

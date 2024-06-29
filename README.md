@@ -10,8 +10,21 @@ Sample deployment configuration
 
 1. Install the required Python packages.
 
+if 
+
 ```sh
 pip install llama-cpp-python
+pip install flask
+```
+thows error
+Download and install Anaconda python from ['here'](https://www.anaconda.com/download)
+
+```sh
+conda create -n deeplearning python=3.8
+conda activate deeplearning
+conda config --add channels conda-forge
+conda config --set channel_priority strict
+conda install llama-cpp-python
 pip install flask
 ```
 
