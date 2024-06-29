@@ -10,12 +10,18 @@ Sample deployment configuration
 
 1. Install the required Python packages.
 
-## Ubuntu
+## Ubuntu CPU
 
 ```sh
 pip install llama-cpp-python
 pip install flask
 ```
+## Ubuntu with CUDA
+
+```sh
+CMAKE_ARGS="-DLLAMA_CUDA=on" pip install llama-cpp-python
+```
+
 ## Windows
 
 Download and install Anaconda python from [here](https://www.anaconda.com/download)
@@ -32,12 +38,19 @@ pip install flask
 2. Download the required model file from [here](https://drive.google.com/file/d/13UUBxOuFUrbrTGGuPxT7WXJpldSjbqXO/view).
 
 ## Deployment
-
-1. Run the `app.py` script to start the Flask server.
+### CPU 
+1. Run the `app_cpu.py` script to start the Flask server.
 
 ```sh
-python app.py
+python app_cpu.py
 ```
+### CUDA GPU
+1. Run the `app_cuda_gpu.py` script to start the Flask server.
+
+```sh
+python app_cuda_gpu.py
+```
+
 
 2. In a new terminal, run the `post_request.py` script to send a POST request to the server.
 
