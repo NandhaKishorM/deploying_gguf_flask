@@ -10,11 +10,14 @@ Sample deployment configuration
 
 1. Install the required Python packages.
 
+# Ubuntu
+
 ```sh
 pip install llama-cpp-python
 pip install flask
 ```
-thows error
+## Windows
+
 Download and install Anaconda python from [here](https://www.anaconda.com/download)
 
 ```sh
