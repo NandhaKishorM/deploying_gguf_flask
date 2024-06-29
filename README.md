@@ -20,6 +20,7 @@ pip install flask
 
 ```sh
 CMAKE_ARGS="-DLLAMA_CUDA=on" pip install llama-cpp-python
+pip install flask
 ```
 
 ## Windows
