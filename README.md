@@ -10,7 +10,7 @@ Sample deployment configuration
 
 1. Install the required Python packages.
 
-# Ubuntu
+## Ubuntu
 
 ```sh
 pip install llama-cpp-python
