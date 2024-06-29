@@ -1,4 +1,4 @@
-# Convai AI Deployment Guide
+# GGUF Model Deployment Guide
 
 Sample deployment configuration
 
@@ -48,4 +48,7 @@ You can send a POST request to `http://localhost:5000/api/deployment` with the f
 ```
 
 The server will respond with the AI-generated response.
+
+## Deploying flask in production
+Clicke [here](https://medium.com/techfront/step-by-step-visual-guide-on-deploying-a-flask-application-on-aws-ec2-8e3e8b82c4f7) to learn more on how to deploy a flask application in production
 
